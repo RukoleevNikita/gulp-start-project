@@ -1,1 +1,1 @@
-alert('Hello gulp')
+// alert('Hello gulp')

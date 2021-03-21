@@ -1,18 +1,16 @@
-body {
-    font-size: 20px;
-    display: flex;
-}
+@mixin font($font_name, $file_name, $weight, $style) {
 
-span {
-    font-size: 30px;
-    @media (max-width: 767px) {
-        font-size: 8px;
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
     }
-}
+    }
+
+@import "fonts";
 
 div {
-    font-size: 25px;
-    @media (max-width: 767px) {
-        font-size: 15px;
-    }
+    background: url("../img/IMG_7972.jpg") 0 0 no-repeat;
 }
